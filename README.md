@@ -109,37 +109,26 @@ Example:
 
 Run
 ---
-Double-click:
+Double-click for a dry run for creating dropdown attributes:
 
-  Run-DryRun.cmd
+  Run-DryRun.cmd 
 
-Select the JSON file. Inspect the console output and CSV log.
+Select the sample-project.json JSON file. Inspect the console output and CSV log.
 
 When ready, double-click:
 
-  Run-AccAttributeTool.cmd
+  Run-AccAttributeTool.cmd to really execute the dropdown attribute creation
+
+  
 
 For the new folder-derived update mode, double-click:
 
-  Run-PopulateFileAttributes-DryRun.cmd
+  Run-PopulateFileAttributes-DryRun.cmd for the dry run
 
 Then:
 
-  Run-PopulateFileAttributes.cmd
+  Run-PopulateFileAttributes.cmd to really populate the attributes as described
 
-Command-line examples
----------------------
-Create dropdown definitions dry-run:
-
-  powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\AccAttributeTool.ps1 -InputPath .\sample-project.json -DryRun
-
-Populate file attributes dry-run:
-
-  powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\AccAttributeTool.ps1 -InputPath .\sample-populate-file-attributes.json -Mode populate-file-attributes-from-folders -DryRun
-
-Populate file attributes for real:
-
-  powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\AccAttributeTool.ps1 -InputPath .\sample-populate-file-attributes.json -Mode populate-file-attributes-from-folders
 
 Important notes
 ---------------
